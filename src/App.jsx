@@ -35,18 +35,16 @@ function App() {
 
             {/* Meniu Desktop */}
             <div className="hidden md:flex space-x-8">
-              {["Produse", "Wireless", "Tehnologie", "Despre noi"].map(
-                (item) => (
-                  <a
-                    key={item}
-                    href={`#${item.toLowerCase().replace(" ", "-")}`}
-                    className="text-text-secondary hover:text-neon-blue transition duration-300 text-sm uppercase tracking-wider font-medium relative group py-2"
-                  >
-                    {item}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-blue transition-all duration-300 group-hover:w-full"></span>
-                  </a>
-                )
-              )}
+              {["Despre Noi", "Wireless", "Tehnologie"].map((item) => (
+                <a
+                  key={item}
+                  href={`#${item.toLowerCase().replace(" ", "-")}`}
+                  className="text-text-secondary hover:text-neon-blue transition duration-300 text-sm uppercase tracking-wider font-medium relative group py-2"
+                >
+                  {item}
+                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-neon-blue transition-all duration-300 group-hover:w-full"></span>
+                </a>
+              ))}
             </div>
 
             <div className="hidden md:flex">
