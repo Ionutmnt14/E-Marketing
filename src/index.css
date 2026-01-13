@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+/* --- TEMA PERSONALIZATĂ DARK/ELECTRONIC --- */
+@theme {
+  /* Un albastru electric vibrant pentru accente și butoane */
+  --color-neon-blue: #3b82f6;
+  /* O variantă mai luminoasă pentru efecte de glow */
+  --color-neon-light: #60a5fa;
+
+  /* Culorile de fundal - profunde, închise */
+  --color-dark-bg-main: #0f172a; /* Slate 900 - fundalul principal */
+  --color-dark-bg-sec: #020617; /* Slate 950 - pentru secțiuni secundare */
+  --color-dark-card: #1e293b; /* Slate 800 - pentru carduri */
+
+  /* Culori pentru text */
+  --color-text-primary: #f8fafc; /* Alb murdar */
+  --color-text-secondary: #94a3b8; /* Gri deschis */
+}
+
+/* --- SETĂRI GLOBALE --- */
+body,
+html {
+  /* Setăm fundalul global la culoarea închisă */
+  background-color: var(--color-dark-bg-main);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth; /* Scroll fin între secțiuni */
+}
+
+/* --- CLASE UTILITARE PERSONALIZATE PENTRU EFECTE --- */
+
+/* Efect de sticlă (Glassmorphism) pentru Navbar */
+.glass-nav {
+  background: rgba(15, 23, 42, 0.8); /* Dark blue semi-transparent */
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Efect de strălucire la hover pentru carduri */
+.hover-glow {
+  transition: all 0.3s ease-in-out;
+}
+.hover-glow:hover {
+  border-color: rgba(59, 130, 246, 0.5); /* Neon blue border */
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.15); /* Neon glow outside */
+  transform: translateY(-5px); /* Ușoară ridicare */
+}
