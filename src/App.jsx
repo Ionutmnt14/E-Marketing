@@ -106,12 +106,12 @@ function App() {
             powerbank-uri este aici.
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold mb-8 leading-tight tracking-tight">
-            Energie{" "}
+            Putere{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-neon-blue to-white">
-              Nelimitată
+              Fără Limite
             </span>
             . <br />
-            Oriunde ai nevoie.
+            Oriunde Te Afli.
           </h1>
           <p className="text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed">
             Soluții moderne de alimentare pentru smartphone-uri, tablete și
